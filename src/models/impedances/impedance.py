@@ -1,6 +1,6 @@
 from typing import Type
-from .self import SelfImpedance
 from .mutual import MutualImpedance
+from .self import SelfImpedance
 
 
 class Impedance:
@@ -34,6 +34,6 @@ class Impedance:
         " Method to return the Mutual Impedance from phases BC "
         return self.mutual_impedance.z_bc
 
-    def get_z_ca(self) -> float:
+    def get_z_ca(self) -> complex:
         " Method to return the Mutual Impedance from phase CA "
         return self.mutual_impedance.z_ca

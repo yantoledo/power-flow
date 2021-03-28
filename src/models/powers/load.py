@@ -13,13 +13,13 @@ class Load:
         p_power: Type[PPower],
         q_power: Type[QPower],
         model: int,
-        type_conection: int,
+        type_connection: int,
     ):
         self.s_power = s_power
         self.p_power = p_power
         self.q_power = q_power
         self.model = model
-        self.type_conection = type_conection
+        self.type_connection = type_connection
 
     def get_s_a(self) -> complex:
         " Method to return the Appearance Power from phase A "
